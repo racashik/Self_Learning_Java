@@ -1,0 +1,115 @@
+// Constructor is a special type of method
+// Constructor name should be as Class name
+// It doesn't have any return type
+
+// Constructor 2 types; Default and Parametrized constructor 
+
+// Here also used Constructor overloading 
+
+// Following code for Class file
+
+package root_OPP;
+
+public class teacher{
+
+	String name, gender;
+	int phone;
+
+	
+	teacher(){
+		System.out.println("No value");
+	}
+
+
+	teacher(String n, String m) {
+		name = n;
+		gender = m;
+
+	}
+	
+	teacher(String n, String m, int pn){
+		name = n;
+		gender = m;
+		phone = pn;
+	}
+	
+	void displayInformation() {
+
+		System.out.println("Name: " + name);
+		System.out.println("Gender: " + gender);
+		System.out.println("Phone: " + phone);
+
+	}
+
+}
+
+
+
+
+
+
+// Following code for Object file
+
+
+
+
+package root_OPP;
+
+public class test {
+
+	public static void main(String[] args) {
+		
+		// It's calling the "Parametrized constructor" Calling which has 3 value
+		teacher t1 = new teacher("Ashik", "Male", 1611456654);
+		t1.displayInformation();
+		
+		
+		System.out.println("\n");
+		
+		// It's calling the "Parametrized constructor" Calling which has 2 value
+		teacher t2 = new teacher("Kabir", "Male");
+		t2.displayInformation();
+
+
+		System.out.println("\n");
+		
+		// It's calling the "NoN Parametrized / Default constructor" Calling which has No value
+		teacher t2 =new teacher();
+		t2.displayInformation();
+		
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

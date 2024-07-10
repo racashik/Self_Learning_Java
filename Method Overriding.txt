@@ -1,0 +1,105 @@
+// For Method Override we must have to do inheritance
+// In Method Override we change parent class's method but 
+must remember parameter, method name, return type will be same both where
+
+// What is method overriding: Declearing a method in subclass which is 
+already present in superclass 
+
+// This is also called Run time Polymorphism
+
+// Use the keyword @Override
+
+
+
+//******* Parents Class
+
+package method_overriding;
+
+public class person {
+
+	String name;
+	int age;
+
+	void displayInformation() {
+		System.out.println("Name : " + name);
+		System.out.println("Age : " + age);
+	}
+
+}
+
+
+
+
+// ******* Sub Class
+
+
+package method_overriding;
+
+public class teacher extends person {
+
+	String qualification;
+
+	@Override
+	void displayInformation() {
+		System.out.println("Name : " + name);
+		System.out.println("Age : " + age);
+		System.out.println("Qualification : " + qualification);
+
+	}
+
+}
+
+
+
+
+// ********** Test class where creates the object
+
+
+package method_overriding;
+
+public class test {
+
+	public static void main(String[] args) {
+
+		// Object for Teacher Class
+		teacher t1 = new teacher();
+		t1.name = "Ashik";
+		t1.age = 28;
+		t1.qualification = "CSE Teacher";
+		t1.displayInformation();
+
+		// Object for Person Class
+		person p1 = new person();
+		p1.name = "Zahid";
+		p1.age = 32;
+		p1.displayInformation();
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

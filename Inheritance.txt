@@ -1,0 +1,152 @@
+// Another core concept of OOP is "Inheritance"
+// Inheritance is a process where can have another class properties in to one class
+// The privilege of using Inheritance is, do not need to write same properties again into another class 
+
+
+// *********** Parents Class
+
+package inheritance;
+
+public class person {
+
+	String name;
+	int age;
+
+	void displayInformation1() {
+		System.out.println("Name: " + name);
+		System.out.println("Age: " + age);
+	}
+
+}
+
+
+
+// ************** Child Class where inherit the person class variables and method
+
+
+package inheritance;
+
+public class teacher extends person {
+
+	String qualification;
+
+	void displayInformation2() {
+		displayInformation1();
+		System.out.println("Qualification: " + qualification);
+	}
+
+}
+
+
+
+
+// ******* Test class where makes the Object
+
+
+package inheritance;
+
+public class test {
+
+	public static void main(String[] args) {
+
+		teacher t1 = new teacher();
+		t1.name = "Alamin";
+		t1.age = 20;
+		t1.qualification = "CSC Teacher";
+		
+		t1.displayInformation2();
+
+	}
+
+}
+
+
+
+
+
+//  *********** We can al co Inherite "Private" variables by using GET, SET Methods
+
+
+
+
+
+// There are 4 types of inheritance in OOP language
+// 1. Single inheritance	B Class -->  A Class  
+
+	public class A{
+	   ----------
+	   ----------
+	}
+	public class B extends A{
+	   ----------
+	   ----------
+	}
+
+// 2. Multilevel inheritance	C class -->  B Class -->  A Class
+
+	public class A{
+	   ----------
+	   ----------
+	}
+	public class B extends A{
+	   ----------
+	   ----------
+	}
+	public class C extends B{
+	   ----------
+	   ----------
+	}
+
+// 3. Hierarchical inheritance	C class -->  A Class <--  B Class
+	public class A{
+	   ----------
+	   ----------
+	}
+	public class B extends A{
+	   ----------
+	   ----------
+	}
+	public class C extends A{
+	   ----------
+	   ----------
+	}
+
+// 4. Multiple inheritance  (But Java do not support this Inheritance directly)	
+
+	public class A{
+	   ----------
+	   ----------
+	}
+	public class B extends A{
+	   ----------
+	   ----------
+	}
+	public class C extends A{
+	   ----------
+	   ----------
+	}
+	public class D extends B,C{
+	   ----------
+	   ----------
+	}
+
+
+
+
+
+https://www.youtube.com/watch?v=CXZ1SgyLMxU&list=PLgH5QX0i9K3oAZUB2QXR-dZac0c9HNyRa&index=134
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

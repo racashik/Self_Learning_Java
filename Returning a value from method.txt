@@ -1,0 +1,33 @@
+// Class file where made the method
+
+package root_OPP;
+
+public class teacher {
+
+	int square(int value) {
+		return value * value;
+	}
+
+}
+
+
+
+
+
+
+// Class file where made the object
+
+package root_OPP;
+
+public class test {
+
+	public static void main(String[] args) {
+
+		teacher obj1 = new teacher();
+		int result = obj1.square(5);
+
+		System.out.println("Result of 5: " + result);
+
+	}
+
+}

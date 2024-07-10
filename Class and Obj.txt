@@ -1,0 +1,139 @@
+// For class we can makes veriable and methods
+// For Techere class and here only created class veriable
+
+
+package root_OPP;
+
+public class teacher {
+
+	String name, gender;
+	int phone;
+
+	public int teacherDetails() {
+		System.out.println("Hello teacher");
+		return 0;
+	}
+
+}
+
+
+// In this class creating object for above class
+// Here runs the object class without method
+
+package root_OPP;
+
+public class test {
+
+	public static void main(String[] args) {
+
+		teacher t1 = new teacher();
+
+		t1.name = "Ashik";
+		t1.gender = "Male";
+		t1.phone = 01611456654;
+
+		System.out.println("Name: " + t1.name);
+		System.out.println("Name: " + t1.gender);
+		System.out.println("Name: " + t1.phone);
+
+		System.out.println();
+
+		teacher t2 = new teacher();
+
+		t2.name = "Aysha";
+		t2.gender = "Female";
+		t2.phone = 161389432;
+
+		System.out.println("Name: " + t2.name);
+		System.out.println("Name: " + t2.gender);
+		System.out.println("Name: " + t2.phone);
+
+		t1.teacherDetails();
+
+	}
+
+}
+
+
+
+
+
+
+// For Techere class and here created class method
+// We use class method with Parameter so that can use method and run all the class property in a short line code for objects
+// It's also like get set method. "SET" method place the value and "GET" method shows the value
+
+package root_OPP;
+
+public class teacher {
+
+	String name, gender;
+	int phone;
+
+	void setInformation(String n, String m, int ph) {
+		name = n;
+		gender = m;
+		phone = ph;
+	}
+
+	// Return type + method name (Parameter)
+	void displayInformation() {
+
+		System.out.println("Name: " + name);
+		System.out.println("Gender: " + gender);
+		System.out.println("Phone: " + phone);
+
+	}
+
+}
+
+
+
+
+// Set the teacher class objest's data my through the "SetInformation" Method
+
+package root_OPP;
+
+public class test {
+
+	public static void main(String[] args) {
+
+		teacher t1 = new teacher();
+
+		t1.setInformation("Ashik", "Male", 1611456654);
+		t1.displayInformation();
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+// The Java four concept are 1. Encapsulation 2. Inheritance 3. Polymorphism 4. Abstraction
+// Encapsulation is 2 types
+// Encapsulation: 1. All "variable" and "Method" are protected into a class / Single Unit
+// Encapsulation: 2. Protecting data by declearing them as "Private", here data will be hidden from other classes. Like: private int name;
+// In the second case we need to use public "Get", "Set" method for accessing the data
+// Privilage of "Encapsulation" is Data hiding 
+
+
+
+// ********** Main class where makes the Private veriable and the Public method
+
+package root_OPP;
+
+public class teacher {
+
+	private String name;
+	private int age;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+}
+
+
+
+
+
+// ******************* The Class where maked the object and call the SET, GET Methods
+
+
+
+package root_OPP;
+
+public class test {
+
+	public static void main(String[] args) {
+
+		teacher t1 = new teacher();
+
+		t1.setAge(20);
+		System.out.println(t1.getAge());
+
+		t1.setName("Ashik");
+		System.out.println(t1.getName());
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+// Method Overlooding structure are similar to the Constructor but here Method name are not same as Class
+// This is also called compile type "Polymorphism" 
+
+
+//******** The class where has the Methods
+package inheritance;
+
+public class teacher{
+
+	void add(int a, int b) {
+		System.out.println(a + b);
+	}
+
+	void add(double a, double b) {
+		System.out.println(a + b);
+	}
+
+	void add(int a, int b, int c) {
+		System.out.println(a + b + c);
+	}
+
+	void add() {
+		System.out.println("No value entered");
+	}
+
+}
+
+
+
+
+
+//******** The class where has the object
+
+
+package inheritance;
+
+public class test {
+
+	public static void main(String[] args) {
+
+		teacher obj = new teacher();
+		obj.add(5, 6);
+
+		obj.add(2.5, 3.5);
+
+		obj.add(5, 10, 20);
+
+		obj.add();
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

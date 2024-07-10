@@ -1,0 +1,116 @@
+package root;
+
+import java.util.Scanner;
+
+public class Self_practice {
+
+	private static final String NextInt = null;
+
+	public static void main(String[] args) {
+
+//		1st pattern
+//		* 
+//		** 
+//		*** 
+//		**** 
+
+//		for(int i=1; i<=4; i++) {
+//			
+//			for(int j=1; j<=i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println(" ");
+//		}
+
+//		2nd pattern	
+//		    * 
+//		   ** 
+//		  *** 
+//		 **** 
+
+//		for (int i = 1; i <= 4; i++) {
+//
+//			for (int j = 3; j >= i; j--) {
+//				System.out.print(" ");
+//			}
+//
+//			for (int k = 1; k <= i; k++) {
+//				System.out.print("*");
+//			}
+//			System.out.println(" ");
+//
+//		}
+
+//		3rd pattern	
+//		    *  
+//		   * *  
+//		  * * *  
+//		 * * * *  
+
+//		for (int i = 1; i <= 4; i++) {
+//
+//			for (int j = 3; j >= i; j--) {
+//				System.out.print(" ");
+//			}
+//
+//			for (int k = 1; k <= i; k++) {
+//				System.out.print("* ");
+//			}
+//			System.out.println(" ");
+//
+//		}
+
+//		4th pattern
+//		**** 
+//		*** 
+//		** 
+//		* 
+
+//		for(int i=1; i<=4; i++) {
+//			
+//			for(int j=i; j<=4; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+
+//************ While loop Example***********	
+
+//		Scanner input = new Scanner(System.in);
+//		
+//		System.out.print("Enter the Number: ");
+//		int num = input.nextInt();
+//		
+//		int a=1;
+//		
+//		while(a<=num) {
+//			System.out.println("I'm in loop");
+//			a++;
+//		}
+//		
+//		System.out.print("Enter new number: ");
+//		int act = input.nextInt();
+//		
+//		System.out.println("Entering new number =" + act);
+
+// ********* Example of Do_while loop***********
+//		Scanner input = new Scanner(System.in);
+//		
+//		System.out.print("Enter the Loop value: ");
+//				
+//		int c = input.nextInt();
+//		
+//		do {
+//			System.out.println("Show the menue");
+//			c++;
+//		}
+//		while(c<=5);
+
+	}
+
+	private static Scanner Scanner(String nextint2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
